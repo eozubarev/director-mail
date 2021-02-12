@@ -1,0 +1,24 @@
+section.directory 
+    .directory__container.container 
+        .directory__top 
+            .directory__top-logos 
+                .directory__logo
+                    a(href="http://ekodar.ru" target="_blank") 
+                        img.directory__logo(src="./images/director/ekodar-logo.png", alt="Логотип компании Ekodar")
+                .logo
+                    a(href="http://ecomaster.ru" target="_blank") 
+                        img.directory__logo(src="./images/director/ecomaster-logo.png", alt="Логотип компании Ecomaster")
+
+            .directory__top-info 
+                .directory__title.title
+                    h1 Письмо директору компании
+                .directory__text 
+                    p Мы открыты для Ваших замечаний и предложений!<br /> Спасибо, что нашли время написать нам.
+
+            .directory__form 
+                +form({
+                        idTarget: 'dealer',
+                        name: 'dealer',
+                        full: true,
+                        button: 'Отправить запрос'
+                })

@@ -1,0 +1,93 @@
+.directory {
+    // height: 100vh;
+    min-height: auto;
+    background: #0e1419 no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    background-image: url("/images/director/bg.png");
+    &__container {
+        margin: 50px 0px 40px !important;
+        width: 780px;
+        margin: 0;
+        @media(min-width: 1600px) {
+            width: 840px;
+        }
+    }
+
+    &__top {
+        &-logos {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    
+    &__logo {
+        max-width: 150px;
+        margin: 0px 50px 0px 0px;
+        position: relative;
+        &:first-child {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 172px;
+                top: 15px;
+                z-index: 5;
+                background-color: #fff;
+                width: 1px;
+                height: 20px;
+                @media(max-width: 550px) {
+                    left: 131px;
+                    top: 10px;
+                }
+            }
+        }
+        @media(max-width: 550px) {
+            max-width: 115px;
+            margin: 0px 35px 0px 0px;
+        }
+    }
+    
+    &__line {
+        margin-left: 25px;
+        margin-right: 25px;
+        max-height: 25px;
+        border-right: 1px solid white;
+    }
+    
+    &__info {
+        margin-top: 40px;
+    }
+    
+    &__title {
+        margin-top: 40px;
+        font-weight: 300;    
+        color: white;
+        @media(max-width: 992px) {
+            font-size: 27px;
+        }
+        @media(max-width: 550px) {
+            font-size: 22px;
+            margin-top: 25px;
+        }
+        @media(max-width: 430px) {
+            font-size: 18px !important;
+            margin-top: 20px;
+        }
+    }
+    
+    &__text {
+        font-size: 17px;
+        color: white;
+        margin-top: 25px;
+    }
+
+    &__form {
+        margin-top: 50px;
+    }
+}
