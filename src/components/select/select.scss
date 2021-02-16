@@ -87,8 +87,13 @@
             z-index: 10;
         }
         &-item {
-            padding: 14px 0px 17px 25px;       
+            word-wrap: break-word;
             font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #333;
+
+            padding: 14px 0px 17px 25px;       
             border-top: 1px solid $bg_gray;
             transition: background-color $transition;
             &:hover {

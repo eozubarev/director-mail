@@ -309,8 +309,12 @@ button:active {
   z-index: 10;
 }
 .form__select-item {
-  padding: 14px 0px 17px 25px;
+  word-wrap: break-word;
   font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #333;
+  padding: 14px 0px 17px 25px;
   border-top: 1px solid #f2f4f7;
   transition: background-color 0.3s ease;
 }
@@ -403,12 +407,16 @@ button:active {
   opacity: 1;
 }
 .input.--focused .input__error-msg, .input.--focused .input__placeholder, .input.--hasValue .input__error-msg, .input.--hasValue .input__placeholder {
-  transform: translateY(-17px);
-  font-size: 11px;
+  transform: translateY(-15px);
+  font-size: 12px;
 }
 .input__element {
+  word-wrap: break-word;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #333;
   width: 100%;
-  font-size: 18px;
   resize: none;
   opacity: 0;
   transition: opacity 0.3s;
@@ -417,7 +425,7 @@ button:active {
   opacity: 1;
 }
 .input__placeholder, .input__error-msg {
-  top: 20px;
+  top: 16px;
   font-size: 15px;
   position: absolute;
   left: 24px;
