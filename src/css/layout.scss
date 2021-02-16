@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	font-family: $roboto;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.5;
 	color: $black;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -80,6 +80,7 @@ button {
 }
 
 .wrapper {
+	overflow-x:hidden;
 	width: 100vw;
 	min-height: 100vh;
 }
