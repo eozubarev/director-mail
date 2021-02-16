@@ -102,6 +102,10 @@
         &:focus {
             opacity: 1;
         }
+
+        &::selection {
+            background: #babdc27a;
+        }
     }
     &__placeholder, &__error-msg {
         top: 16px;

@@ -424,6 +424,9 @@ button:active {
 .input__element:focus {
   opacity: 1;
 }
+.input__element::selection {
+  background: #babdc27a;
+}
 .input__placeholder, .input__error-msg {
   top: 16px;
   font-size: 15px;
