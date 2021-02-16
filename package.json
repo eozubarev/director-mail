@@ -13,7 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.13",
-    "bootstrap": "^4.5.3",
     "parcel": "^2.0.0-beta.1",
     "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0",

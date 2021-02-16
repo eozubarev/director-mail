@@ -109,6 +109,16 @@ button:active {
   transform: translate(2px, 2px);
 }
 
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 700px;
@@ -723,7 +733,7 @@ button:active {
 }
 .directory {
   padding: 100px 0px 140px 0px;
-  background: #0e1419 no-repeat center;
+  background: #393A3D no-repeat center;
   background-size: cover;
   color: #fff;
   display: flex;

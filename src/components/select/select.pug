@@ -1,9 +1,18 @@
 .form__select 
-    input(class="form__select-input" type="hidden" name="")
-    .form__select-head Тема обращения:
+    <label class="input input--name form__select-head">
+        <input class="input__element --callback" type="text">
+        <span class="input__placeholder">Тема обращения</span>
+    </label>
     ul.form__select-list 
         li.form__select-item Предложение
         li.form__select-item Жалоба
         li.form__select-item Претензия
         li.form__select-item Благодарность
-        li.form__select-item Другое:
+    
+
+
+//- <select class="form-control">
+//-     <option selected="selected">orange</option>
+//-     <option>white</option>
+//-     <option>purple</option>
+//- </select>

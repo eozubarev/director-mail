@@ -25,9 +25,11 @@ mixin input(item)
       span.input__error-msg Ссылки запрещены
   else if item.type == 'file'
     label.input__file.js-inputFile
-      input(type=item.type multiple name="files[]")
-      span.input__file-el.input__file-icon
-      span.input__file-el.input__file-text.link= item.placeholder
-      //- span.input__file-count.js-inputFileCount
+      .input__file-start
+        input(type=item.type multiple name="files[]")
+        span.input__file-el.input__file-icon
+        span.input__file-el.input__file-text.link= item.placeholder
+      .input__file-end
+        span.input__file-count.js-inputFileCount
 
   
