@@ -313,7 +313,7 @@ button:active {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0;
-  color: #333;
+  color: #4a4a4a;
   padding: 14px 0px 17px 25px;
   border-top: 1px solid #f2f4f7;
   transition: background-color 0.3s ease;
@@ -415,7 +415,7 @@ button:active {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0;
-  color: #333;
+  color: #4a4a4a;
   width: 100%;
   resize: none;
   opacity: 0;
@@ -425,7 +425,7 @@ button:active {
   opacity: 1;
 }
 .input__element::selection {
-  background: #babdc27a;
+  background: #7f859849;
 }
 .input__placeholder, .input__error-msg {
   top: 16px;
@@ -436,7 +436,7 @@ button:active {
   transition: font-size 0.3s, transform 0.3s, opacity 0.3s;
 }
 .input__placeholder {
-  color: #b4bdc5;
+  color: rgba(0, 0, 0, 0.44);
 }
 .input__error-msg {
   opacity: 0;
