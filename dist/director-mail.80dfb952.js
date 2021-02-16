@@ -194,7 +194,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./css/fonts.css":"css/fonts.css","/Users/ijenya/Desktop/ECODAR/director.ecomaster/director.ecomaster/src/images/icon-check.svg":[["icon-check.72789738.svg","images/icon-check.svg"],"images/icon-check.svg"],"./images/icon-clip.svg":[["icon-clip.31ff8273.svg","images/icon-clip.svg"],"images/icon-clip.svg"],"/Users/ijenya/Desktop/ECODAR/director.ecomaster/director.ecomaster/src/images/director/bg.png":[["bg.ff25b365.png","images/director/bg.png"],"images/director/bg.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/mask.js":[function(require,module,exports) {
+},{"./css/fonts.css":"css/fonts.css","/Users/ijenya/Desktop/director-for-my-git/director-mail/src/images/icon-check.svg":[["icon-check.72789738.svg","images/icon-check.svg"],"images/icon-check.svg"],"./images/icon-clip.svg":[["icon-clip.31ff8273.svg","images/icon-clip.svg"],"images/icon-clip.svg"],"/Users/ijenya/Desktop/director-for-my-git/director-mail/src/images/director/bg.png":[["bg.ff25b365.png","images/director/bg.png"],"images/director/bg.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/mask.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1144,7 +1144,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56093" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61500" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1321,4 +1321,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../index.js"], null)
-//# sourceMappingURL=/director.ecomaster.80dfb952.js.map
+//# sourceMappingURL=/director-mail.80dfb952.js.map
