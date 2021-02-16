@@ -1047,12 +1047,13 @@ class SelectForm {
     this.selectMenus = [...document.querySelectorAll('.form__select')];
     this.activeClass = '--active';
     this.selectClass = '--selected';
+    this.hasValue = '--hasValue';
     this.listeners();
   }
 
   listeners() {
     for (let selectMenu of this.selectMenus) {
-      selectMenu.addEventListener('click', () => {
+      selectMenu.addEventListener('mousedown', () => {
         if (!selectMenu.classList.contains(this.activeClass)) {
           this.removeSelectMenus();
           this.openSelectMenu(selectMenu);
@@ -1060,14 +1061,14 @@ class SelectForm {
           this.hideSelectMenu(selectMenu);
         }
       });
-      document.addEventListener('click', event => {
+      document.addEventListener('mousedown', event => {
         let target = event.target;
         target == selectMenu || selectMenu.contains(target) ? false : this.hideSelectMenu(selectMenu);
       });
       let items = selectMenu.querySelectorAll('.form__select-item');
 
       for (let item of items) {
-        item.addEventListener('click', () => {
+        item.addEventListener('mousedown', () => {
           let value = item.textContent;
           this.choiceReasonCall(selectMenu, value);
         });
@@ -1089,12 +1090,12 @@ class SelectForm {
     selectMenu.classList.remove(this.activeClass);
   }
 
-  choiceReasonCall(selectMenu, value) {
+  choiceReasonCall(selectMenu, el) {
     selectMenu.classList.add(this.selectClass);
-    let input = selectMenu.querySelector('.form__select-input');
+    let input = selectMenu.querySelector('.input__element');
+    input.value = el;
     let head = selectMenu.querySelector('.form__select-head');
-    head.innerHTML = value;
-    input.value = value;
+    head.classList.add(this.hasValue);
   }
 
 }
@@ -1143,7 +1144,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54092" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57126" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
