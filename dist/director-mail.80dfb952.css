@@ -793,9 +793,11 @@ button:active {
 }
 .directory__title {
   margin-top: 25px;
-  font-weight: 300;
   color: white;
   font-size: 25px;
+}
+.directory__title h1 {
+  font-weight: normal;
 }
 @media (max-width: 992px) {
   .directory__title {
@@ -817,7 +819,7 @@ button:active {
 .directory__text {
   font-size: 16px;
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .directory__form {
   margin-top: 50px;
