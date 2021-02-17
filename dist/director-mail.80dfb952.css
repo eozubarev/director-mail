@@ -777,7 +777,7 @@ button:active {
 }
 @media (max-width: 570px) {
   .directory {
-    min-height: 0px;
+    min-height: inherit;
     height: 100%;
   }
 }
