@@ -618,7 +618,7 @@ button:active {
   font-weight: 200;
   font-weight: 400;
   border-radius: 4px;
-  background-image: linear-gradient(to top, #787e92 0%, #878c9f 100%);
+  background-image: linear-gradient(to top, #f28525 0%, #e97c20 100%);
   transition: filter 0.3s;
 }
 @media (max-width: 767px) {
@@ -632,7 +632,7 @@ button:active {
   pointer-events: none;
 }
 .form__button:not([disabled]):hover {
-  background-image: linear-gradient(to bottom, #787e92 0%, #878c9f 100%);
+  background-image: linear-gradient(to bottom, #f28525 0%, #e97c20 100%);
 }
 .form__thanks {
   visibility: hidden;
@@ -774,6 +774,11 @@ button:active {
   align-items: center;
   text-align: left;
   background-image: url("/bg.ff25b365.png");
+}
+@media (max-width: 570px) {
+  .directory {
+    min-height: auto;
+  }
 }
 .directory__container {
   width: 655px;
