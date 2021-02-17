@@ -782,8 +782,7 @@ button:active {
 }
 @media (max-width: 570px) {
   .directory {
-    min-height: inherit;
-    height: 100%;
+    min-height: 50vh;
   }
 }
 .directory__container {

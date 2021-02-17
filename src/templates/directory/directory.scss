@@ -14,8 +14,7 @@
         background: #393a3d no-repeat 85%;
     }
     @media(max-width: 570px) {
-        min-height: inherit;
-        height: 100%;
+        min-height: 50vh;
     }
     &__container {
         width: 655px;
