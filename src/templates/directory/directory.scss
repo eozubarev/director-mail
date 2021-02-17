@@ -10,6 +10,9 @@
     align-items: center;
     text-align: left;
     background-image: url("/images/director/bg.png");
+    @media(max-width: 992px) {
+        background: #393a3d no-repeat 85%;
+    }
     @media(max-width: 570px) {
         min-height: inherit;
         height: 100%;
