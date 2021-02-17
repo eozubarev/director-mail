@@ -763,8 +763,8 @@ button:active {
   }
 }
 .directory {
-  width: 100%;
   min-height: 100vh;
+  width: 100%;
   padding: 40px 0px 20px 0px;
   background: #393A3D no-repeat center;
   background-size: cover;
@@ -774,16 +774,6 @@ button:active {
   align-items: center;
   text-align: left;
   background-image: url("/bg.ff25b365.png");
-}
-@media (max-width: 992px) {
-  .directory {
-    background: #393a3d no-repeat 85%;
-  }
-}
-@media (max-width: 570px) {
-  .directory {
-    min-height: 50vh;
-  }
 }
 .directory__container {
   width: 655px;
