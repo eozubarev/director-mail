@@ -14,7 +14,7 @@
     }
     &.--textarea {
         min-height: 160px;
-        height: 100%;
+        // height: 100%;
         & .input__element {
             height: 100%;
             font-family: $roboto;
@@ -128,7 +128,7 @@
 @media (max-width:1200px) {
     .input {
         &.--textarea {
-            height: 120px;
+            min-height: 120px;
         }
     }
 }
@@ -159,7 +159,7 @@
 @media (max-width:450px) {
     .input {
         &.--textarea {
-            height: 100px;
+            min-height: 100px;
         }
     }
 }
