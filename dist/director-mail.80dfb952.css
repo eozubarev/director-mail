@@ -110,14 +110,19 @@ button:active {
 }
 
 .wrapper {
-  overflow-x: hidden;
-  width: 100vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-height: 100vh;
-}
-
-.main {
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -474,16 +479,14 @@ button:active {
     height: 100px;
   }
 }
+.form {
+  position: relative;
+}
 .form.--thanks form {
-  display: none;
+  opacity: 0;
 }
 .form.--thanks .form__thanks {
-  width: unset;
-  height: unset;
   visibility: visible;
-}
-.form.--thanks .directory {
-  height: 100vh;
 }
 .form.--check .form__checkNumber {
   opacity: 1;
@@ -530,7 +533,6 @@ button:active {
 }
 .form__container {
   position: relative;
-  max-width: 655px;
   margin: 0 auto;
   z-index: 1;
 }
@@ -623,9 +625,13 @@ button:active {
   background-image: linear-gradient(to bottom, #787e92 0%, #878c9f 100%);
 }
 .form__thanks {
-  width: 0;
-  height: 0;
   visibility: hidden;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  position: absolute;
 }
 .form__thanks-title {
   margin-bottom: 30px;
@@ -634,6 +640,7 @@ button:active {
   line-height: 1.2;
 }
 .form__thanks-description {
+  z-index: 50;
   max-width: 400px;
   margin: 0 auto;
   font-size: 19px;
@@ -744,7 +751,9 @@ button:active {
   }
 }
 .directory {
-  padding: 100px 0px 140px 0px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0px 20px 0px;
   background: #393A3D no-repeat center;
   background-size: cover;
   color: #fff;
