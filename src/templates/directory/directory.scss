@@ -11,7 +11,8 @@
     text-align: left;
     background-image: url("/images/director/bg.png");
     @media(max-width: 570px) {
-        min-height: auto;
+        min-height: 0px;
+        height: 100%;
     }
     &__container {
         width: 655px;

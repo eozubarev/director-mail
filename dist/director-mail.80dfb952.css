@@ -777,7 +777,8 @@ button:active {
 }
 @media (max-width: 570px) {
   .directory {
-    min-height: auto;
+    min-height: 0px;
+    height: 100%;
   }
 }
 .directory__container {
