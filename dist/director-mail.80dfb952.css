@@ -353,6 +353,7 @@ button:active {
 }
 .input.--textarea {
   min-height: 160px;
+  height: 100%;
 }
 .input.--textarea .input__element {
   height: 100%;
