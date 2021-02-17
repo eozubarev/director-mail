@@ -31,6 +31,12 @@
         transition: border-color .3s;
         overflow: hidden;
         cursor: pointer;
+        @media(max-width: 400px) {
+            height: 21px;
+        }
+        @media(max-width: 350px) {
+            height: 19px;
+        }
         &:hover {
             border-color: $active;
         }

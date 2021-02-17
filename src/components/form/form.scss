@@ -180,6 +180,7 @@
     }
 }
 .--submit {
+    text-align: center;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -233,18 +234,11 @@
             }
             &.--submit {
                 margin-top: 30px;
+                text-align: center;
             }
         }
     }
 }
-// @media (max-width:1000px) {
-//     .form {
-//         & .container {
-//             padding-top: 50px;
-//             padding-bottom: 60px;
-//         }
-//     }
-// }
 @media (max-width:767px) {
     .form {
         &.--slim {
@@ -257,9 +251,6 @@
             & .form__submit {
                 font-size: 14px;
             }
-        }
-        & .container {
-
         }
         &:not(.--slim) {
             & .form__title {

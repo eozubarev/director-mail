@@ -212,6 +212,16 @@ button:active {
   overflow: hidden;
   cursor: pointer;
 }
+@media (max-width: 400px) {
+  .checkbox__element {
+    height: 21px;
+  }
+}
+@media (max-width: 350px) {
+  .checkbox__element {
+    height: 19px;
+  }
+}
 .checkbox__element:hover {
   border-color: #1ba4d9;
 }
@@ -658,6 +668,7 @@ button:active {
 }
 
 .--submit {
+  text-align: center;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -705,6 +716,7 @@ button:active {
   }
   .form__block.--submit {
     margin-top: 30px;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
