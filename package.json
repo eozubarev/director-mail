@@ -20,5 +20,8 @@
   },
   "browserslist": [
     "last 1 chrome version"
-  ]
+  ],
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  }
 }
